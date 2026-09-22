@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(243, 207, 214);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 40px;
+        }
+        .container {
+            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+            padding: 30px 60px ;
+            background-color: rgb(177, 197, 171);
+            border-radius: 8px;
+            margin: 0 auto;
+            margin: 0 25% 0 25%; 
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(235, 92, 135);
+
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group > label {
+            font-weight: bold;
+            color: rgb(59, 58, 58);
+        }
+        input[type="text"],
+        input[type="tel"]{
+            width: 100%;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        input[type="file"]{
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        select,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ecbaba;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: rgb(235, 92, 135);
+            padding: 10px;
+            border-radius: 5px;
+            border: 0.2px solid #c2ecc0;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #ecbaba;
+        }
+        button[type="reset"] {
+            background-color: rgb(179, 226, 189);
+            padding: 10px;
+            border-radius: 5px;
+            border: 0.2px solid #d8b5c3;
+            cursor: pointer;
+        }
+        button[type="reset"]:hover {
+            background-color: #ecbaba;
+        }
+            
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Isi Form Pendaftaran Mahasiswa</h1>
+        <p>Tolong isi pendaftaran berikut: </p>
+        <hr>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-group"> 
+                    <label for="name">Name :</label><br>
+                <input type="text" id="name" placehorder="Enter Your Name" name="name">
+            </div>
+                   
+            <div class="form-group">
+                    <label for="hp">No telp./hp</label><br>
+                <input type="tel" name="hp" placehorder="08xxxxxx">
+            </div>
+              
+            <div class="form-group">
+                    <label for="">Hobi (Boleh pilih banyak) :</label><br>
+                <input type="checkbox" name="hoby[]"> Memasak<br>
+                <input type="checkbox" name="hoby[]"> Berenang<br>
+                <input type="checkbox" name="hoby[]"> Mancing<br>
+                <input type="checkbox" name="hoby[]"> futsal<br>
+            </div>
+           
+            <div class="form-group">
+                    <label for=""> Jenis Kelamin :</label><br>
+                <input type="radio"name="Jenis Kelamin"> Laki-laki<br> 
+                <input type="radio"name="Jenis Kelamin"checked> Perempuan<br>
+            </div>
+            
+            <div class="form-group">
+                    <label for="">Pilih Jurusan :</label><br>
+                <select name="" id="">
+                    <option value="">-choose Major</option>
+                    <option value="">-Informatik</option>
+                    <option value="">-Sistem Informasi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                    <label for=""> Foto :</label>
+                <input type="file" name="foto">
+            </div>
+           
+            <div class="form-group"> 
+                <label for="">Alamat :</label>
+                <textarea name="alamat" cols="30" rows="5"></textarea><br>
+            </div>
+          
+            <div class="botton-group"> 
+                <button type="submit">Kirim</button>
+                <button type="reset">Reset</button>  
+            </div>
+             
+        </form>
+    </div>
+
+</body>
+</html>
